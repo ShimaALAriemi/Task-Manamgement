@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Managment</title>
+    <link rel="stylesheet" href="./assesst/css/index.css">
+</head>
+<body>
+    <div class="board">
+
+      <div class="Add_sec">
+        <form id="todo-form">
+            <input type="text" placeholder="New TODO..." class="t-input" id="todo-input" />
+            <button type="submit">Add +</button>
+        </form>
+      
+
+         <!-- <form class="list-form" id="todo-form">
+          <input type="text" placeholder="New LIST..." class="t-input" id="list-input" />
+          <button type="submit" id="list-inptu">Add New List +</button>
+       </form>  -->
+       
+      </div>
+
+        <div class="lanes">
+
+            <div class="swim-lane" id="todo-lane">
+              <h3 class="heading">TODO</h3>
+    
+              <p class="task" draggable="true">Get groceries</p>
+              <p class="task" draggable="true">Feed the dogs</p>
+              <p class="task" draggable="true">Mow the lawn</p>
+            </div>
+
+            <div class="swim-lane Done-lane" id="todo-lane">
+                <h3 class="heading">Doning</h3>
+      
+                <p class="task" draggable="true">Get groceries</p>
+                <p class="task" draggable="true">Feed the dogs</p>
+                <p class="task" draggable="true">Mow the lawn</p>
+              </div>
+
+              <div class="swim-lane Doning-lane"  id="todo-lane">
+                <h3 class="heading">Done</h3>
+      
+                <p class="task" draggable="true">Get groceries</p>
+                <p class="task" draggable="true">Feed the dogs</p>
+                <p class="task" draggable="true">Mow the lawn</p>
+              </div>
+
+        </div>
+
+    </div>
+    <script src="/assesst/js/list.js"></script>
+
+
+    <script src="/assesst/js/todo.js"></script>
+    <script src="/assesst/js/drag.js"></script>
+</body>
+</html>
